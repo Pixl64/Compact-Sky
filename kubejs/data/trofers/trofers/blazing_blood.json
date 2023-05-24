@@ -1,0 +1,23 @@
+{
+    "name": {
+        "color": "#FFAA00",
+        "text": "BLAZING BLOOD"
+    },
+    "display": {
+        "scale": 0.6,
+        "offset": {
+            "y": 3
+        }
+    },
+    "animation": {
+        "type": "spinning",
+        "speed": 0.1
+    },
+    "item": {
+        "item": "tconstruct:blazing_blood_bucket"
+    },
+    "colors": {
+        "base": "#606060",
+        "accent": "#FFAA00"
+    }
+}

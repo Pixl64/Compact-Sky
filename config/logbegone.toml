@@ -1,0 +1,5 @@
+
+[logbegone]
+	regex = [""]
+	phrases = ["the_aether", "me.je.lo.PluginCaller", "Couldn't parse", "Failed to parse recipe", "Couldn't parse data file", "Couldn't load tag fabric:mineable/needs_tool_level_"]
+

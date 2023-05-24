@@ -1,0 +1,45 @@
+{
+  // The template which will be used for spawn only
+  // Example: 
+  // {
+  //     "name": "default",
+  //     "desc": "",
+  //     "file": "default.nbt",
+  //     "spawns": "default",
+  //     "direction": "south"
+  // }
+  "spawn": {
+    "name": "Spawn",
+    "desc": "",
+    "file": "standard.nbt",
+    "spawns": "standard",
+    "direction": "south"
+  },
+  
+  "spawns": {
+    "default": [
+      [ 6, 3, 5 ]
+    ],
+    "standard": [
+      [ 0, 1, 0 ]
+    ]
+  },
+  
+  // The list of templates being available. The first entry is the default template.
+  "templates": [
+    {
+      "name": "Standard",
+      "desc": "",
+      "file": "standard.nbt",
+      "spawns": "standard",
+      "direction": "south"
+    },
+    {
+      "name": "test",
+      "desc": "Comes with a premade cobblegen!",
+      "file": "default.nbt",
+      "spawns": "default",
+      "direction": "south"
+    }
+  ]
+}

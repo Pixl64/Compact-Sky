@@ -1,0 +1,321 @@
+
+[general]
+	#Want to take a look at the internals of EMC Calculation? Enable this to write all the conversions and setValue-Commands to config/ProjectE/mappingdump.json
+	dumpEverythingToFile = false
+	#When the next EMC mapping occurs write the results to config/ProjectE/pregenerated_emc.json and only ever run the mapping again when that file does not exist, this setting is set to false, or an error occurred parsing that file.
+	pregenerate = false
+	#Log known EMC Exploits. This can not and will not find all possible exploits. This will only find exploits that result in fixed/custom emc values that the algorithm did not overwrite. Exploits that derive from conversions that are unknown to ProjectE will not be found.
+	logEMCExploits = true
+
+[enabledMappers]
+	#Add Conversions for Crafting Recipes gathered from net.minecraft.item.crafting.RecipeManager
+	CraftingMapper = false
+	#Allows other mods to easily set EMC values using the ProjectEAPI
+	APICustomEMCMapper = false
+	#Set EMC=0 for everything in the forge:raw_materials tag
+	RawOresBlacklistMapper = true
+	#Add Conversions for Brewing Recipes
+	BrewingMapper = false
+	#Add Conversions for all lingering potions to arrow recipes
+	TippedArrowMapper = false
+	#Set EMC=0 for everything in the forge:ores tag
+	OresBlacklistMapper = true
+	#Add Conversions for all weathered copper variants
+	WeatheredCopperMapper = false
+	#Loads json files within datapacks (data/<domain>/pe_custom_conversions/*.json) to add values and conversions
+	CustomConversionMapper = false
+	#Uses the `custom_emc.json` File to add EMC values.
+	CustomEMCMapper = true
+	#Recipe mapper for custom recipes that don't implement IRecipe
+	ProjectEIntegrationRecipeMapper = false
+	#Adds back and forth conversions of objects and their Tag variant. (EMC values assigned to tags will not behave properly if this mapper is disabled)
+	TagMapper = false
+
+[CraftingMapper]
+
+	[CraftingMapper.CreateSplashingMapper]
+		#ProjectE-Integration Recipe Mapper for Create Splashing Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.CreateDeployerApplicationMapper]
+		#ProjectE-Integration Recipe Mapper for Create Deployer Application Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.CreateBASINMapper]
+		#ProjectE-Integration Recipe Mapper for Create BASINMapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalPulverizerMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Pulverizer Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.FarmersDelightCookingPotMapper]
+		#ProjectE-Integration Recipe Mapper for Farmers Delight Cooking Pot Mapper. Required Mods: [farmersdelight]
+		enabled = false
+
+	[CraftingMapper.MysticalAgricultureInfusionMapper]
+		#ProjectE-Integration Recipe Mapper for Mystical Agriculture Infusion Mapper. Required Mods: [mysticalagriculture]
+		enabled = false
+
+	[CraftingMapper.ChippedLoomTableMapper]
+		#ProjectE-Integration Recipe Mapper for Chipped Loom Table Mapper. Required Mods: [chipped]
+		enabled = false
+
+	[CraftingMapper.ArsNouveauEnchantingApparatusMapper]
+		#ProjectE-Integration Recipe Mapper for Ars Nouveau Enchanting Apparatus Mapper. Required Mods: [ars_nouveau]
+		enabled = false
+
+	[CraftingMapper.CreateCuttingMapper]
+		#ProjectE-Integration Recipe Mapper for Create Cutting Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.ExtendedCraftingEnderCrafterMapper]
+		#Maps extended crafting Ender Crafter recipes
+		enabled = false
+
+	[CraftingMapper.CreateHauntingMapper]
+		#ProjectE-Integration Recipe Mapper for Create Haunting Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.ChippedAlchemyBenchMapper]
+		#ProjectE-Integration Recipe Mapper for Chipped Alchemy Bench Mapper. Required Mods: [chipped]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalSawmillMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Sawmill Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.ChippedMechanistWorkbenchMapper]
+		#ProjectE-Integration Recipe Mapper for Chipped Mechanist Workbench Mapper. Required Mods: [chipped]
+		enabled = false
+
+	[CraftingMapper.CreateMechanicalCraftingMapper]
+		#ProjectE-Integration Recipe Mapper for Create Mechanical Crafting Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.ChippedBotanistWorkbenchMapper]
+		#ProjectE-Integration Recipe Mapper for Chipped Botanist Workbench Mapper. Required Mods: [chipped]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalSmelterMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Smelter Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.AppliedEnergisticsInscriberMapper]
+		#ProjectE-Integration Recipe Mapper for Applied Energistics Inscriber Mapper. Required Mods: [ae2]
+		enabled = false
+
+	[CraftingMapper.ArsNouveauImbuementMapper]
+		#ProjectE-Integration Recipe Mapper for Ars Nouveau Imbuement Mapper. Required Mods: [ars_nouveau]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalInsolatorMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Insolator Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalSmelterRecycleMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Smelter Recycle Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.ChippedGlassblowerMapper]
+		#ProjectE-Integration Recipe Mapper for Chipped Glassblower Mapper. Required Mods: [chipped]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalChillerMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Chiller Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.ChippedCarpentersTableMapper]
+		#ProjectE-Integration Recipe Mapper for Chipped Carpenters Table Mapper. Required Mods: [chipped]
+		enabled = false
+
+	[CraftingMapper.ArsNouveauGlyphMapper]
+		#ProjectE-Integration Recipe Mapper for Ars Nouveau Glyph Mapper. Required Mods: [ars_nouveau]
+		enabled = false
+
+	[CraftingMapper.CreateItemApplicationMapper]
+		#ProjectE-Integration Recipe Mapper for Create Item Application Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.CreateCompactingMapper]
+		#ProjectE-Integration Recipe Mapper for Create Compacting Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.CreateMillingMapper]
+		#ProjectE-Integration Recipe Mapper for Create Milling Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.FarmersDelightCuttingBoardMapper]
+		#ProjectE-Integration Recipe Mapper for Farmers Delight Cutting Board Mapper. Required Mods: [farmersdelight]
+		enabled = false
+
+	[CraftingMapper.ExtendedCraftingCompressorMapper]
+		#ProjectE-Integration Recipe Mapper for Extended Crafting Compressor Mapper. Required Mods: [extendedcrafting]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalFurnaceMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Furnace Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalCrucibleMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Crucible Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalPyrolyzerMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Pyrolyzer Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.ExtendedCraftingCombinationMapper]
+		#Maps Extended Crafting Combination recipes
+		enabled = false
+
+	[CraftingMapper.SomtingThermalBottlerMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Bottler Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.MysticalAgricultureReprocessorMapper]
+		#ProjectE-Integration Recipe Mapper for Mystical Agriculture Reprocessor Mapper. Required Mods: [mysticalagriculture]
+		enabled = false
+
+	[CraftingMapper.CreateSequencedAssemblyMapper]
+		#ProjectE-Integration Recipe Mapper for Create Sequenced Assembly Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.ChippedMasonTableMapper]
+		#ProjectE-Integration Recipe Mapper for Chipped Mason Table Mapper. Required Mods: [chipped]
+		enabled = false
+
+	[CraftingMapper.ArsNouveauCrushMapper]
+		#ProjectE-Integration Recipe Mapper for Ars Nouveau Crush Mapper. Required Mods: [ars_nouveau]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalPressMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Press Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.CreateCUTTINGMapper]
+		#ProjectE-Integration Recipe Mapper for Create CUTTINGMapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalBrewerMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Brewer Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalCentrifugeMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Centrifuge Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.CreateSandpaperPolishingMapper]
+		#ProjectE-Integration Recipe Mapper for Create Sandpaper Polishing Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.CreatePressingMapper]
+		#ProjectE-Integration Recipe Mapper for Create Pressing Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.SomtingThermalRefineryMapper]
+		#ProjectE-Integration Recipe Mapper for Somting Thermal Refinery Mapper. Required Mods: [thermal]
+		enabled = false
+
+	[CraftingMapper.CreateCrushingMapper]
+		#ProjectE-Integration Recipe Mapper for Create Crushing Mapper. Required Mods: [create]
+		enabled = false
+
+	[CraftingMapper.ExtendedCraftingTableMapper]
+		#Maps Extended Crafting Table recipes
+		enabled = false
+
+	[CraftingMapper.Smithing]
+		#Maps smithing recipes.
+		enabled = false
+
+	[CraftingMapper.VanillaRecipeTypes]
+		#Maps the different vanilla recipe types.
+		enabled = false
+
+	[CraftingMapper.MekItemStackToGas]
+		#Maps Mekanism item stack to gas recipes. (Gas conversion, Oxidizing)
+		enabled = false
+
+	[CraftingMapper.MekCombiner]
+		#Maps Mekanism combiner recipes.
+		enabled = false
+
+	[CraftingMapper.MekElectrolysis]
+		#Maps Mekanism electrolytic separator recipes.
+		enabled = false
+
+	[CraftingMapper.MekItemStackToInfuseType]
+		#Maps Mekanism item stack to infuse type conversion recipes.
+		enabled = false
+
+	[CraftingMapper.MekChemicalInfuser]
+		#Maps Mekanism chemical infuser recipes.
+		enabled = false
+
+	[CraftingMapper.MekRotary]
+		#Maps Mekanism rotary condensentrator recipes.
+		enabled = false
+
+	[CraftingMapper.MekGasToGas]
+		#Maps Mekanism activating and centrifuging recipes.
+		enabled = false
+
+	[CraftingMapper.MekDissolution]
+		#Maps Mekanism dissolution recipes.
+		enabled = false
+
+	[CraftingMapper.MekFluidSlurryToSlurry]
+		#Maps Mekanism washing recipes.
+		enabled = false
+
+	[CraftingMapper.MekMetallurgicInfuser]
+		#Maps Mekanism metallurgic infuser recipes.
+		enabled = false
+
+	[CraftingMapper.MekItemStackGasToItemStack]
+		#Maps Mekanism Machine recipes that go from item, gas to item. (Compressing, Purifying, Injecting)
+		enabled = false
+
+	[CraftingMapper.MekChemicalCrystallizer]
+		#Maps Mekanism crystallizing recipes.
+		enabled = false
+
+	[CraftingMapper.MekPressurizedReaction]
+		#Maps Mekanism pressurized reaction recipes.
+		enabled = false
+
+	[CraftingMapper.MekItemStackToPigment]
+		#Maps Mekanism item stack to pigment recipes. (Pigment Extracting)
+		enabled = false
+
+	[CraftingMapper.MekSawmill]
+		#Maps Mekanism sawmill recipes. (Disabled by default, due to causing various EMC values to be removed pertaining to charcoal/wood)
+		enabled = false
+
+	[CraftingMapper.MekItemStackToItemStack]
+		#Maps Mekanism Machine recipes that go from item to item. (Crushing, Enriching, Smelting)
+		enabled = false
+
+	[CraftingMapper.MekFluidToFluid]
+		#Maps Mekanism evaporating recipes.
+		enabled = false
+
+	[CraftingMapper.MekPaintingMachine]
+		#Maps Mekanism painting machine recipes.
+		enabled = false
+
+	[CraftingMapper.MekPigmentMixer]
+		#Maps Mekanism pigment mixer recipes.
+		enabled = false
+
+	[CraftingMapper.FallbackRecipeType]
+		#Fallback for default handling of recipes that extend ICraftingRecipe, AbstractCookingRecipe, SingleItemRecipe, or SmithingRecipe. This will catch modded extensions of the vanilla recipe classes, and if the VanillaRecipeTypes mapper is disabled, this mapper will still catch the vanilla recipes.
+		enabled = false
+
+[ProjectEIntegrationRecipeMapper]
+
+	[ProjectEIntegrationRecipeMapper.BlueSkiesAlchemyTableMapper]
+		#ProjectE-Integration Recipe Mapper for Blue Skies Alchemy Table Mapper. Required Mods: [blue_skies]
+		enabled = false
+

@@ -1,0 +1,34 @@
+{
+	id: "06ACC3EBD96711CC"
+	group: "33C5CF150A18730C"
+	order_index: 0
+	filename: "getting_started"
+	title: "Getting Started"
+	icon: "minecraft:bamboo"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			x: 0.0d
+			y: 0.0d
+			id: "001883A5945C49E1"
+			tasks: [{
+				id: "76F469041181ACAA"
+				type: "item"
+				item: "minecraft:bamboo"
+				count: 16L
+			}]
+		}
+		{
+			x: 3.0d
+			y: 0.0d
+			id: "522DAFF415211A80"
+			tasks: [{
+				id: "22844FC1A507C01D"
+				type: "item"
+				item: "bambooeverything:bamboo_bundle"
+			}]
+		}
+	]
+	quest_links: [ ]
+}
