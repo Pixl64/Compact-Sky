@@ -29,7 +29,8 @@ usernamecache.json
 /XaeroWaypoints_Backup032021/
 /XaeroWorldMap/
 
-config/fastload.properties
+
 config/oculus.properties
 config/fastload.properties
+config/xaerominimap_entities.json
 config/oculus.properties

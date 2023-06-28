@@ -1,9 +1,28 @@
 !!dev.wuffs.squatgrow.config.SquatGrowConfig
 allowAdventureTwerking: true
-chance: 0.5
+chance: 0.2
 debug: false
 enableMysticalCrops: true
-ignoreList: ['minecraft:grass_block', 'minecraft:grass', 'minecraft:tall_grass', 'minecraft:netherrack',
-  'minecraft:warped_nylium', 'minecraft:crimson_nylium']
+ignoreList: ['minecraft:grass_block', 'minecraft:grass', 'minecraft:tall_grass', 'byg:lush_grass_block',                                                    #Overworld
+  'minecraft:netherrack', 'minecraft:warped_nylium', 'minecraft:crimson_nylium', 'byg:wailing_nylium', 'byg:sythian_nylium', 'byg:embur_nylium',            #Nether 
+  'byg:shulkren_phylium', 'byg:vermilion_sculk', 'byg:ivis_phylium', 'byg:ether_phylium', 'byg:imparius_phylium', 'byg:imparius_phylium',                   #End
+  'blue_skies:turquoise_cherry_grass_block', 'blue_skies:lunar_cherry_grass_block', 'blue_skies:lunar_grass_block', 'blue_skies:turquoise_grass_block',     #Blue Skies
+  'tconstruct:earth_vanilla_slime_grass', 'tconstruct:sky_vanilla_slime_grass', 'tconstruct:ender_vanilla_slime_grass',                                     #TCon Vanilla
+  'tconstruct:earth_earth_slime_grass', 'tconstruct:sky_earth_slime_grass', 'tconstruct:ender_earth_slime_grass',                                           #TCon Earth
+  'tconstruct:earth_sky_slime_grass', 'tconstruct:sky_sky_slime_grass', 'tconstruct:ender_sky_slime_grass',                                                 #TCon Sky
+  'tconstruct:earth_ender_slime_grass', 'tconstruct:sky_ender_slime_grass', 'tconstruct:ender_ender_slime_grass',                                           #TCon Ender
+  'tconstruct:earth_ichor_slime_grass', 'tconstruct:sky_ichor_slime_grass', 'tconstruct:ender_ichor_slime_grass',                                           #TCon Ichor
+  'immersive_weathering:rooted_grass_block', 'immersive_weathering:ivy', 'quark:glow_lichen_growth', 'quark:chorus_weeds', 'quark:chorus_twist',            #Misc
+
+  'minecraft:sunflower', 'minecraft:lilac', 'minecraft:rose_bush', 'minecraft:peony', 'minecraft:kelp'                                                      #Overworld Plants
+  'minecraft:twisting_vines', 'minecraft:weeping_vines', 'byg:imparius_vine', 'byg:lament_vine', 'byg:embur_gel_vines', 'byg:shulkren_vine',                #Nether Plants
+  'enlightened_end:parasol_vine_top', 'enlightened_end:ooze_shroom', 'enlightened_end:chorus_roots', 
+  'enlightened_end:cerulean_vine', 'enlightened_end:cerulean_grass',                                                                                        #End Plants
+  'minecraft:moss_block', 'minecraft:small_dripleaf', 'minecraft:big_dripleaf', 'minecraft:glow_lichen',                                                    #Cave Plants
+  'byg:tall_allium', 'byg:delphinium', 'byg:foxglove', 'byg:japanese_orchid', 'byg:tall_pink_allium' 'byg:prairie_grass',                                   #BYG Plants
+  'chipped:moss_block_1', 'chipped:moss_block_2', 'chipped:moss_block_3', 'chipped:moss_block_4', 'chipped:moss_block_5', 'chipped:moss_block_6', 
+  'chipped:moss_block_7', 'chipped:moss_block_8', 'chipped:moss_block_9', 'chipped:moss_block_10', 'chipped:moss_block_11',                                 #Chipped Moss
+
+  ]
 range: 3
 useWhitelist: false
