@@ -4,17 +4,32 @@ onEvent("recipes", event => {
         'A'
     ], {
         A: "minecraft:bamboo"
+    }).id('minecraft:stick_from_bamboo_item')
+    event.shaped('createsifter:string_mesh', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ],{
+        A: 'minecraft:stick',
+        B: '#forge:string'
+    }).id('createsifter:string_mesh')
+    event.shaped('kubejs:bamboo_clump', [
+        'AA',
+        'AA'
+    ],{
+        A: 'minecraft:bamboo'
     })
-    event.shaped("bambooeverything:dry_bamboo_bundle", [
+    event.shaped('twigs:bundled_bamboo', [
         'AA',
         'AA'
     ], {
-        A: "bambooeverything:dry_bamboo"
+        A: 'kubejs:bamboo_clump'
     })
-    event.shaped("bambooeverything:bamboo_bundle", [
-        'AA',
-        'AA'
+    event.shaped('minecraft:dirt', [
+        'AB',
+        'BA'
     ], {
-        A: "minecraft:bamboo"
-    })
+        A: 'minecraft:bone_meal',
+        B: '#minecraft:leaves'
+    })    
 })

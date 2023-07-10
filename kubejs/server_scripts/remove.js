@@ -1,14 +1,30 @@
 onEvent("recipes", event =>{
-    // event.remove({input: "bambooeverything:dry_bamboo"})
-    // Variant Removal
-    // event.remove({output: ["quark:bamboo_block", "thermal:bamboo_block", "bambooeverything:bamboo_bundle", "tropicraft:bamboo_bundle"]})
-    // event.remove({output: ["consistency_plus:polished_calcite", "architects_palette:calcite_bricks"], type: 'minecraft:crafting'})
-
     // ID Removal
     event.remove({id: "consistency_plus:stone_crafting"})
+    event.remove({id: 'twigs:bundled_bamboo/bundled_bamboo'})
+    event.remove({id: 'twigs:bundled_bamboo/bundled_bamboo_undo'})
+
+
+
+    // Type Removal
+    event.remove({type: 'extendedcrafting:combination'})
+    event.remove({type: 'extendedcrafting:compressor'})
+    event.remove({type: 'extendedcrafting:shaped_ender_crafter'})
+    event.remove({type: 'extendedcrafting:shaped_table'})
+    event.remove({type: 'extendedcrafting:shapeless_ender_crafter'})
+    event.remove({type: 'extendedcrafting:shapeless_table'})
+    event.remove({type: 'extendedcrafting:ultimate_singularity'})
+
+    //maybe remove pneumatic craft explosion craft in favour of lychee?
+    
+    
+    // Input Removal
+
+    
+    // Output Removal
+
     event.remove({output: "tropicraft:bamboo_stick"})
-    event.remove([
-        {id: "bambooeverything:bamboo_bundle"}, {id: "bambooeverything:bamboo_bundle_uncrafting"}, 
-        {id: "bambooeverything:dry_bamboo_bundle"}, {id: "bambooeverything:dry_bamboo_bundle_uncrafting"}])
+    event.remove({output: ["thermal:bamboo_block", "tropicraft:bamboo_bundle"]})
+    
 
 })
