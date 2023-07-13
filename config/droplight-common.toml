@@ -37,10 +37,10 @@
 
 # Configure item dropping options
 [Drops]
-	# The minimum delay in ticks between each item drop after killing a mob. (20 ticks = 1 second, 0 = no delay)
+	# The minimum delay in ticks between each item drop after killing a mob. Must be set on server for multiplayer. (20 ticks = 1 second, 0 = no delay)
 	#Range: 0 ~ 20
 	dropDelay = 4
-	# If items should be tossed into the air when dropped from a slain mob.
+	# If items should be tossed into the air when dropped from a slain mob. Must be set on server for multiplayer.
 	tossDrops = true
 	# If items should rotate wildly when thrown.
 	itemFlipping = false

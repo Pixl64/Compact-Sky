@@ -176,6 +176,7 @@ tropicraft:osa_rainforest
 tropicraft:overgrown_mangroves
 tropicraft:rainforest
 tropicraft:river
+tropicraft:tropical_peaks
 tropicraft:tropics
 twilightforest:clearing
 twilightforest:dark_forest

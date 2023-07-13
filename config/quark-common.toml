@@ -1440,7 +1440,7 @@
 	"Auto Walk Keybind" = true
 
 	[client.variant_animal_textures]
-		"Enable Cow" = true
+		"Enable Cow" = false
 		"Enable Pig" = true
 		"Enable Chicken" = true
 		"Enable Shiny Rabbit" = true
