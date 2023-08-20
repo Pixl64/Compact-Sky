@@ -22,11 +22,185 @@
 		{
 			x: 3.0d
 			y: 0.0d
-			id: "522DAFF415211A80"
+			dependencies: ["001883A5945C49E1"]
+			id: "58E0EE6573717D20"
 			tasks: [{
-				id: "22844FC1A507C01D"
+				id: "7BC862E5A7BCDB73"
 				type: "item"
-				item: "bambooeverything:bamboo_bundle"
+				item: "kubejs:bamboo_clump"
+				count: 4L
+			}]
+		}
+		{
+			x: 6.0d
+			y: 0.0d
+			dependencies: ["58E0EE6573717D20"]
+			id: "0CC00BC7A11A4BA1"
+			tasks: [{
+				id: "1D11505948843E25"
+				type: "item"
+				item: "twigs:bundled_bamboo"
+			}]
+		}
+		{
+			x: 9.0d
+			y: 0.0d
+			dependencies: ["0CC00BC7A11A4BA1"]
+			id: "799F92339D03CB01"
+			tasks: [{
+				id: "002E49DEAE039852"
+				type: "item"
+				item: "twigs:stripped_bamboo_planks"
+			}]
+		}
+		{
+			icon: "farmersdelight:cutting_board"
+			x: 9.0d
+			y: 3.0d
+			dependencies: ["799F92339D03CB01"]
+			id: "48A2EAA9FAC1E8EA"
+			tasks: [
+				{
+					id: "6A17192A80A02DAA"
+					type: "item"
+					item: "farmersdelight:cutting_board"
+				}
+				{
+					id: "671716EA5169B924"
+					type: "item"
+					item: {
+						id: "aquaculture:wooden_fillet_knife"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			x: 7.0d
+			y: 6.0d
+			dependencies: ["48A2EAA9FAC1E8EA"]
+			id: "40EAB524D5886AE7"
+			tasks: [{
+				id: "4132C495E897A7AC"
+				type: "item"
+				item: "kubejs:bamboo_twine"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 3.0d
+			dependencies: ["48A2EAA9FAC1E8EA"]
+			id: "1CE7E7E451259949"
+			tasks: [{
+				id: "3DB25A36C1B77B89"
+				type: "item"
+				item: "twigs:bamboo_leaves"
+			}]
+		}
+		{
+			x: 6.0d
+			y: 3.0d
+			shape: "hexagon"
+			dependencies: ["48A2EAA9FAC1E8EA"]
+			optional: true
+			id: "519D2987FF4AA20E"
+			tasks: [{
+				id: "2ACE3081B6D78B63"
+				type: "item"
+				item: "twigs:stripped_bundled_bamboo"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 5.5d
+			dependencies: ["1CE7E7E451259949"]
+			id: "5D2E9C219FB1D9DF"
+			tasks: [{
+				id: "761CB62B181A3BC7"
+				type: "item"
+				item: "twigs:bamboo_thatch"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 0.0d
+			dependencies: ["799F92339D03CB01"]
+			id: "289752F38F467E99"
+			tasks: [{
+				id: "666C0C79439C1893"
+				type: "item"
+				item: "minecraft:composter"
+			}]
+		}
+		{
+			x: 15.0d
+			y: 3.0d
+			dependencies: ["289752F38F467E99"]
+			id: "11F1776134C8FC43"
+			tasks: [{
+				id: "77D69073D85E5738"
+				type: "item"
+				item: "minecraft:bone_meal"
+			}]
+		}
+		{
+			x: 12.0d
+			y: 9.0d
+			dependencies: [
+				"11F1776134C8FC43"
+				"5D2E9C219FB1D9DF"
+			]
+			id: "06E4EA8F37CBE1E1"
+			tasks: [{
+				id: "072DE2E998D986B0"
+				type: "item"
+				item: "minecraft:dirt"
+			}]
+		}
+		{
+			x: 7.0d
+			y: 9.0d
+			dependencies: ["40EAB524D5886AE7"]
+			id: "79967497E0A0252A"
+			tasks: [{
+				id: "3E16DBBF63FC7A72"
+				type: "item"
+				item: {
+					id: "createsifter:string_mesh"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			title: "Lots of bamboo"
+			x: 0.0d
+			y: 3.0d
+			shape: "hexagon"
+			subtitle: "when you see it"
+			dependencies: ["001883A5945C49E1"]
+			optional: true
+			secret: true
+			id: "621D9F7A20EA1237"
+			tasks: [{
+				id: "1F8B1ABA1534A149"
+				type: "item"
+				item: "minecraft:bamboo"
+				count: 727L
+			}]
+		}
+		{
+			x: 9.5d
+			y: 9.0d
+			id: "5DD485D85B31B0D3"
+			tasks: [{
+				id: "4988B9751C9BB4D8"
+				type: "item"
+				item: "twigs:pebble"
+				count: 16L
 			}]
 		}
 	]
