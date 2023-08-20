@@ -12,6 +12,7 @@ usernamecache.json
 /emojiful/
 /etched-sounds/
 /coremods/
+/kubejs/probe/
 /local/ftbchunks/data/
 /logs/
 /mods/
@@ -28,9 +29,8 @@ usernamecache.json
 /XaeroWaypoints/
 /XaeroWaypoints_Backup032021/
 /XaeroWorldMap/
+.vscode/probe.class-definitions.json
+.vscode/probe.code-snippets
+.vscode/probe.lang-schema.json
+config/canary.properties
 
-
-config/oculus.properties
-config/fastload.properties
-config/xaerominimap_entities.json
-config/oculus.properties
