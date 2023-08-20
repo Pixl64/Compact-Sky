@@ -4,6 +4,7 @@ onEvent('player.logged_in', event => {
       // Add the stage
         event.player.stages.add('starting_items')
       // Give some items to player
+        event.player.inventory.clear
         event.player.give(Item.of('eccentrictome:tome', `{"eccentrictome:mods":{
         alexsmobs:{0:{Count:1b,id:"alexsmobs:animal_dictionary"}},
         apotheosis:{0:{Count:1b,id:"patchouli:guide_book",tag:{"patchouli:book":"apotheosis:apoth_chronicle"}}},

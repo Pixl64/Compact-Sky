@@ -3,4 +3,5 @@
 
 onEvent('item.registry', event => {
     event.create('bamboo_twine')
+    event.create('bamboo_clump')
 })

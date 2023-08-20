@@ -15,16 +15,31 @@ onEvent("recipes", event =>{
     event.remove({type: 'extendedcrafting:shapeless_table'})
     event.remove({type: 'extendedcrafting:ultimate_singularity'})
 
+    event.remove({type: 'createsifter:sifting'})
+
     //maybe remove pneumatic craft explosion craft in favour of lychee?
     
     
     // Input Removal
 
+    event.remove({input: [
+        
+    ]})
+
+    global.removedItems.forEach((removedItem) => {
+        event.remove({input: removedItem})
+        event.remove({output: removedItem})
+    })
+
     
     // Output Removal
 
-    event.remove({output: "tropicraft:bamboo_stick"})
-    event.remove({output: ["thermal:bamboo_block", "tropicraft:bamboo_bundle"]})
+    event.remove({output: [
+        "thermal:bamboo_block", 
+        "tropicraft:bamboo_bundle",
+        "tropicraft:bamboo_stick",
+        'tconstruct:clear_item_frame',
+    ]})
     
 
 })
