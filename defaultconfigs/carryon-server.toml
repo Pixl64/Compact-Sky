@@ -50,7 +50,7 @@
 	#Blocks that cannot be picked up
 	forbiddenTiles = ["#forge:immovable", "#forge:relocation_not_supported", "minecraft:end_portal", "minecraft:end_gateway", "minecraft:tall_grass", "minecraft:large_fern", "minecraft:peony", "minecraft:rose_bush", "minecraft:lilac", "minecraft:sunflower", "minecraft:*_bed", "minecraft:oak_door", "minecraft:iron_door", "minecraft:spruce_door", "minecraft:birch_door", "minecraft:jungle_door", "minecraft:acacia_door", "minecraft:dark_oak_door", "minecraft:waterlily", "minecraft:cake", "minecraft:nether_portal", "minecraft:tall_seagrass", "tconstruct:*", "rftools:screen", "rftools:creative_screen", "create:*", "ftbquests:*", "relics:researching_table", "compactmachines:machine_*", "createsifter:sifter"]
 	#Entities that cannot be picked up
-	forbiddenEntities = ["minecraft:end_crystal", "minecraft:ender_dragon", "minecraft:ghast", "minecraft:shulker", "minecraft:leash_knot", "minecraft:armor_stand", "minecraft:item_frame", "minecraft:painting", "minecraft:shulker_bullet", "quark:totem"]
+	forbiddenEntities = ["minecraft:end_crystal", "minecraft:ender_dragon", "minecraft:ghast", "minecraft:shulker", "minecraft:leash_knot", "minecraft:armor_stand", "minecraft:item_frame", "minecraft:painting", "minecraft:shulker_bullet", "quark:totem", "statues:player_statue", "*:*_item_frame"]
 	#Entities that cannot have other entities stacked on top of them
 	forbiddenStacking = ["minecraft:horse"]
 
