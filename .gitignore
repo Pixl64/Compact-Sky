@@ -34,3 +34,4 @@ usernamecache.json
 .vscode/probe.lang-schema.json
 config/canary.properties
 
+config/sdrp-common.json
