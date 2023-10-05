@@ -3,7 +3,7 @@ onEvent('item.tooltip', event => {
         event.add(
             RegExp(`compressium.*_${i}`),
             Text.aqua (
-                `Holds ${Math.pow(9, i)
+                `Contains ${Math.pow(9, i)
                     .toString()
                     .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}`
             )
