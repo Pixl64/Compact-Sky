@@ -1,18 +1,13 @@
 // Hide Items
 onEvent('rei.hide.items', event => {
-    // AllTheCompressed
-    event.hide(/^allthecompressed:allthemodium_block_/)
-    event.hide(/^allthecompressed:vibranium_block_/)
-    event.hide(/^allthecompressed:unobtainium_block_/)
-    event.hide(/^allthecompressed:va_alloy_block_/)
-    event.hide(/^allthecompressed:ua_alloy_block_/)
-    event.hide(/^allthecompressed:uv_alloy_block_/)
-    event.hide(/^allthecompressed:atm_star_block_/)
-    event.hide(/^allthecompressed:ender_pearl_block_/)
-    event.hide(/^allthecompressed:nether_star_block_/)
-    event.hide(/^allthecompressed:wax_block_/)
-    
-    event.hide('decorative_blocks:blockstate_copy_item')
+    // event.hide('decorative_blocks:blockstate_copy_item')
+    // event.hide('botania:pebble')
+    // event.hide('statues:pebble')
+    // event.hide('tconstruct:clear_item_frame')
+
+    global.removedItems.forEach((removedItem) => {
+        event.hide(removedItem)
+    })
 
 })
 
@@ -35,3 +30,4 @@ onEvent('rei.group', event =>{      // Groups similar items
     })
 
 })
+

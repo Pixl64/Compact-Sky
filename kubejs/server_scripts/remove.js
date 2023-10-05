@@ -3,6 +3,7 @@ onEvent("recipes", event =>{
     event.remove({id: "consistency_plus:stone_crafting"})
     event.remove({id: 'twigs:bundled_bamboo/bundled_bamboo'})
     event.remove({id: 'twigs:bundled_bamboo/bundled_bamboo_undo'})
+    event.remove({id: 'tconstruct:tools/modifiers/ability/bucketing'})
 
 
 

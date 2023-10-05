@@ -7,7 +7,7 @@
   "forge:dusts/saltpeter": "null",
   "forge:ingots/steel": "alltheores:steel_ingot",
   "forge:ingots/lead": "alltheores:lead_ingot",
-  "forge:ingots/mithril": "null",
+  "forge:ingots/mithril": "create_dd:mithril_ingot",
   "forge:ingots/iridium": "alltheores:iridium_ingot",
   "forge:ingots/zinc": "alltheores:zinc_ingot",
   "forge:ingots/invar": "alltheores:invar_ingot",

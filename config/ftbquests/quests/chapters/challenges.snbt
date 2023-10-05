@@ -1,0 +1,11 @@
+{
+	id: "6CF32101414BDDC3"
+	group: ""
+	order_index: 2
+	filename: "challenges"
+	title: "Challenges"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [ ]
+	quest_links: [ ]
+}

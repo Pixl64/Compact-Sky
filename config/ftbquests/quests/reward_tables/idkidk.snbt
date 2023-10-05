@@ -1,0 +1,41 @@
+{
+	id: "5C4A83164AEAA7B2"
+	order_index: 0
+	title: "idkidk"
+	icon: "minecraft:stone"
+	loot_size: 1
+	rewards: [
+		{ item: "minecraft:polished_diorite" }
+		{
+			xp: 100
+			type: "xp"
+		}
+		{ item: "minecraft:gravel" }
+		{
+			item: {
+				id: "mekanism:creative_fluid_tank"
+				Count: 1b
+				tag: {
+					mekData: {
+						FluidTanks: [{
+							Tank: 0b
+							stored: {
+								Amount: 2147483647
+								FluidName: "tconstruct:molten_platinum"
+							}
+						}]
+					}
+				}
+			}
+		}
+	]
+	loot_crate: {
+		color: 16777215
+		string_id: "idkidk"
+		drops: {
+			passive: 0
+			boss: 0
+			monster: 0
+		}
+	}
+}

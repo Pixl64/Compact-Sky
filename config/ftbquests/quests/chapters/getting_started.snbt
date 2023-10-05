@@ -20,7 +20,7 @@
 			}]
 		}
 		{
-			x: 3.0d
+			x: 2.0d
 			y: 0.0d
 			dependencies: ["001883A5945C49E1"]
 			id: "58E0EE6573717D20"
@@ -32,7 +32,7 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: 4.0d
 			y: 0.0d
 			dependencies: ["58E0EE6573717D20"]
 			id: "0CC00BC7A11A4BA1"
@@ -43,7 +43,7 @@
 			}]
 		}
 		{
-			x: 9.0d
+			x: 6.0d
 			y: 0.0d
 			dependencies: ["0CC00BC7A11A4BA1"]
 			id: "799F92339D03CB01"
@@ -55,7 +55,7 @@
 		}
 		{
 			icon: "farmersdelight:cutting_board"
-			x: 9.0d
+			x: 6.0d
 			y: 3.0d
 			dependencies: ["799F92339D03CB01"]
 			id: "48A2EAA9FAC1E8EA"
@@ -79,8 +79,8 @@
 			]
 		}
 		{
-			x: 7.0d
-			y: 6.0d
+			x: 6.0d
+			y: 5.0d
 			dependencies: ["48A2EAA9FAC1E8EA"]
 			id: "40EAB524D5886AE7"
 			tasks: [{
@@ -90,7 +90,7 @@
 			}]
 		}
 		{
-			x: 12.0d
+			x: 8.0d
 			y: 3.0d
 			dependencies: ["48A2EAA9FAC1E8EA"]
 			id: "1CE7E7E451259949"
@@ -101,7 +101,7 @@
 			}]
 		}
 		{
-			x: 6.0d
+			x: 4.0d
 			y: 3.0d
 			shape: "hexagon"
 			dependencies: ["48A2EAA9FAC1E8EA"]
@@ -114,8 +114,8 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 5.5d
+			x: 10.0d
+			y: 3.0d
 			dependencies: ["1CE7E7E451259949"]
 			id: "5D2E9C219FB1D9DF"
 			tasks: [{
@@ -125,7 +125,7 @@
 			}]
 		}
 		{
-			x: 12.0d
+			x: 8.0d
 			y: 0.0d
 			dependencies: ["799F92339D03CB01"]
 			id: "289752F38F467E99"
@@ -147,8 +147,8 @@
 			}]
 		}
 		{
-			x: 12.0d
-			y: 9.0d
+			x: 10.0d
+			y: 7.0d
 			dependencies: [
 				"11F1776134C8FC43"
 				"5D2E9C219FB1D9DF"
@@ -161,8 +161,8 @@
 			}]
 		}
 		{
-			x: 7.0d
-			y: 9.0d
+			x: 6.0d
+			y: 7.0d
 			dependencies: ["40EAB524D5886AE7"]
 			id: "79967497E0A0252A"
 			tasks: [{
@@ -178,7 +178,7 @@
 		{
 			title: "Lots of bamboo"
 			x: 0.0d
-			y: 3.0d
+			y: 2.0d
 			shape: "hexagon"
 			subtitle: "when you see it"
 			dependencies: ["001883A5945C49E1"]
@@ -193,8 +193,12 @@
 			}]
 		}
 		{
-			x: 9.5d
+			x: 8.0d
 			y: 9.0d
+			dependencies: [
+				"79967497E0A0252A"
+				"06E4EA8F37CBE1E1"
+			]
 			id: "5DD485D85B31B0D3"
 			tasks: [{
 				id: "4988B9751C9BB4D8"

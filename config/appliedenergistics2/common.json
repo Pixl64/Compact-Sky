@@ -4,7 +4,7 @@
     "matterCannonBlockDamage_comment": "Enables the ability of the Matter Cannon to break blocks.",
     "matterCannonBlockDamage": true,
     "tinyTntBlockDamage_comment": "Enables the ability of Tiny TNT to break blocks.",
-    "tinyTntBlockDamage": true,
+    "tinyTntBlockDamage": false,
     "serverOpsIgnoreSecurity_comment": "Server operators are not restricted by ME security terminal settings.",
     "serverOpsIgnoreSecurity": true,
     "channels_comment": "Changes the channel capacity that cables provide in AE2.",
@@ -60,7 +60,7 @@
   },
   "worldGen": {
     "spawnPressesInMeteorites": true,
-    "generateQuartzOre": true,
+    "generateQuartzOre": false,
     "generateMeteorites": true,
     "quartzOresPerCluster": 7,
     "quartzOresClusterAmount": 20,
@@ -68,7 +68,7 @@
     "quartzOresBiomeBlacklist": []
   },
   "wireless": {
-    "wirelessBaseCost": 8.0,
+    "wirelessBaseCost": 12.0,
     "wirelessCostMultiplier": 1.0,
     "wirelessBaseRange": 16.0,
     "wirelessBoosterRangeMultiplier": 1.0,

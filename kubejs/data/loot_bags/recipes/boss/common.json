@@ -1,0 +1,26 @@
+{
+    "type": "lootbags:loot",
+    "name": "Common Boss Lootbag",
+    "color": "#b380ed",
+    "rarity": "COMMON",
+    "output": {
+      "entries": [
+        {
+          "weight": 2,
+          "stack": "create:andesite_casing"
+        },
+        {
+          "weight": 3,
+          "stack": "create:brass_casing"
+        },
+        {
+          "weight": 1,
+          "stack": "minecraft:diamond"
+        },
+        {
+          "weight": 2,
+          "stack": "minecraft:iron_ingot"
+        }
+      ]
+    }
+  }

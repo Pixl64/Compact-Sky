@@ -35,3 +35,4 @@ usernamecache.json
 config/canary.properties
 
 config/sdrp-common.json
+/config/byg/backups/last_working_configs_backup.zip
